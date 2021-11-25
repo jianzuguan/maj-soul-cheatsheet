@@ -1,3 +1,16 @@
+游戏地址：https://game.maj-soul.com/
+
+这个软件是为了我方便查找役种写的。
+
+# 牌的编码
+每张牌都有唯一的编码，
+万字用 m 表示，筒子用 p 表示，条子用 s 表示，字牌用 z 表示，
+所以 1 万的编码是 1m，9 筒的编码是 9p， 5 条的编码是 5s， 东南西北白发中的编码分别是 1z、22、3z、4z、5z、6z 和 7z，
+特殊的红 5 万用表示，红 5 筒用 p 表示，红 5 条用 0s 表示。
+因此牌山可以唯一的用一串字符序列来表示。假设牌山是 8 筒 7 索 东风红 5 万的话，那么编码序列就是 8p7s1z0m。
+
+总结：万m，筒p，条s，字z。
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
