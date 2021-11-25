@@ -1,0 +1,14 @@
+version: "3.5"
+services:
+  web:
+    container_name: maj-soul-cheatsheet
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/code
+    # stdin_open is needed for react-script to start
+    # Thanks: https://github.com/facebook/create-react-app/issues/8688#issuecomment-602149917
+    stdin_open: true
