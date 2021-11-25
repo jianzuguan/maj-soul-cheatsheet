@@ -1,0 +1,23 @@
+[
+  {
+    "name": "立直",
+    "description": "门前清状态听牌即可立直， 立直状态下和牌",
+    "hanValue": "一番",
+    "closedHandOnly": true,
+    "pattern": "1m2m3m4p4p4p5s6s7s1z1z1z2z 2z"
+  },
+  {
+    "name": "断幺九",
+    "description": "手牌中不包含幺九牌（19万，19筒，19条，字牌）",
+    "hanValue": "一番",
+    "closedHandOnly": false,
+    "pattern": "2m3m4m 5m6m7m 3p3p3p 4s5s6s 8s 8s"
+  },
+  {
+    "name": "门前清自摸和",
+    "description": "门前清状态下自摸和牌",
+    "hanValue": "一番",
+    "closedHandOnly": true,
+    "pattern": "1m1m1m2m3m4m3p3p3p7s8s9s4z 4z"
+  }
+]
