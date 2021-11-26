@@ -21,7 +21,7 @@ function App() {
     <div className="container flex flex-col justify-center items-center">
       <img src={logo} className="App-logo" alt="logo" />
 
-      <div>
+      <div className='w-full flex flex-row justify-between'>
         {" "}
         <Switch.Group>
           <div className="flex items-center">
