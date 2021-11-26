@@ -7,6 +7,7 @@ import { Switch } from "@headlessui/react";
 
 function App() {
   const [showClosedOnly, setShowClosedOnly] = React.useState(true);
+  const [showBasedOnSpecial, setShowBasedOnSpecial] = React.useState(true);
   const [showBasedOnSequence, setShowBasedOnSequence] = React.useState(true);
   const [showBasedOnTriplet, setShowBasedOnTriplet] = React.useState(true);
   const [showBasedOnQuad, setShowBasedOnQuad] = React.useState(true);
@@ -23,6 +24,25 @@ function App() {
 
       <div className='w-full flex flex-row justify-between'>
         {" "}
+        <Switch.Group>
+          <div className="flex items-center">
+            <Switch.Label className="mr-4 text-gray-400">特殊</Switch.Label>
+            <Switch
+              checked={showBasedOnSpecial}
+              onChange={setShowBasedOnSpecial}
+              className={`${
+                showBasedOnSpecial ? "bg-blue-600" : "bg-gray-200"
+              } relative inline-flex items-center h-6 rounded-full w-11`}
+            >
+              <span className="sr-only">特殊</span>
+              <span
+                className={`${
+                  showBasedOnSpecial ? "translate-x-6" : "translate-x-1"
+                } inline-block w-4 h-4 transform bg-white rounded-full`}
+              />
+            </Switch>
+          </div>
+        </Switch.Group>
         <Switch.Group>
           <div className="flex items-center">
             <Switch.Label className="mr-4 text-gray-400">顺子</Switch.Label>
