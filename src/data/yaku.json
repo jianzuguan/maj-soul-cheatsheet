@@ -18,7 +18,8 @@
     "description": "门前清状态下自摸和牌",
     "pattern": "1m1m1m2m3m4m3p3p3p7s8s9s4z 4z",
     "hanValue": "一番",
-    "closedOnly": true
+    "closedOnly": true,
+    "isLuck": true
   },
   {
     "name": "役牌：自风牌",
@@ -65,39 +66,45 @@
     "description": "别家加杠的时候容和（国士无双可以抢暗杠）。抢别人杠牌和",
     "pattern": "1p1p1p 1p",
     "hanValue": "一番",
-    "isQuad": true
+    "isQuad": true,
+    "isLuck": true
   },
   {
     "name": "岭上开花",
     "description": "用摸到的岭上牌和牌。杠后摸牌和",
     "pattern": "2m3m4m5p5p5p3s4s5s6s 8s8s8s8s 3s",
     "hanValue": "一番",
-    "isQuad": true
+    "isQuad": true,
+    "isLuck": true
   },
   {
     "name": "海底摸月",
     "description": "最后一张牌自摸和牌",
     "pattern": "2m2m2m 4p5p6p 3s3s3s 9s9s9s 1z 1z",
-    "hanValue": "一番"
+    "hanValue": "一番",
+    "isLuck": true
   },
   {
     "name": "河底捞鱼",
     "description": "最后一张牌荣和",
     "pattern": "2m2m2m 4p5p6p 3s3s3s 9s9s9s 1z 1z",
-    "hanValue": "一番"
+    "hanValue": "一番",
+    "isLuck": true
   },
   {
     "name": "一发",
     "description": "最后一张牌荣和",
     "pattern": "2m2m2m 4p5p6p 3s3s3s 9s9s9s 1z 1z",
-    "hanValue": "一番"
+    "hanValue": "一番",
+    "isLuck": true
   },
   {
     "name": "两立直",
     "description": "轮到自己之前无人鸣牌的状态下第一巡就立直",
     "pattern": "1m2m3m4m4m4m5p6p7p5z5z5z6z 6z",
     "hanValue": "二番",
-    "closedOnly": true
+    "closedOnly": true,
+    "isLuck": true
   },
   {
     "name": "三色同刻",
@@ -217,14 +224,16 @@
     "description": "庄家第一巡和牌",
     "pattern": "1m2m3m4p4p4p5s6s7s1z1z1z2z2z",
     "hanValue": "役满",
-    "dealerOnly": true
+    "dealerOnly": true,
+    "isLuck": true
   },
   {
     "name": "地和",
     "description": "轮到自己之前无人鸣牌的状态下第一巡自摸和牌",
     "pattern": "1m2m3m4p4p4p5s6s7s1z1z1z2z 2z",
     "hanValue": "役满",
-    "nonDealerOnly": true
+    "nonDealerOnly": true,
+    "isLuck": true
   },
   {
     "name": "大三元",
