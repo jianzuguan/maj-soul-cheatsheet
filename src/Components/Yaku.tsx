@@ -14,7 +14,7 @@ interface Props {
     nonDealerOnly?: boolean;
   };
 }
-export function Yaku(props: Props) {
+export default function Yaku(props: Props) {
   const { yaku } = props;
   const {
     name,
