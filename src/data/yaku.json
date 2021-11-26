@@ -58,13 +58,15 @@
     "name": "枪杠",
     "description": "别家加杠的时候容和（国士无双可以抢暗杠）。抢别人杠牌和",
     "pattern": "1p1p1p 1p",
-    "hanValue": "一番"
+    "hanValue": "一番",
+    "isQuad": true
   },
   {
     "name": "岭上开花",
     "description": "用摸到的岭上牌和牌。杠后摸牌和",
     "pattern": "2m3m4m5p5p5p3s4s5s6s 8s8s8s8s 3s",
-    "hanValue": "一番"
+    "hanValue": "一番",
+    "isQuad": true
   },
   {
     "name": "海底摸月",
@@ -102,7 +104,8 @@
     "name": "三杠子",
     "description": "一人开杠3次",
     "pattern": "5s6s7s 3m3m3m3m 3p3p3p3p 3s3s3s3s 7z7z",
-    "hanValue": "二番"
+    "hanValue": "二番",
+    "isQuad": true
   },
   {
     "name": "对对和",
@@ -259,7 +262,8 @@
     "name": "四杆子",
     "description": "1人开杠4次",
     "pattern": "1m1m1m1m 2p2p2p2p 3s3s3s3s 1z1z1z1z 6z6z",
-    "hanValue": "役满"
+    "hanValue": "役满",
+    "isQuad": true
   },
   {
     "name": "九莲宝灯",
