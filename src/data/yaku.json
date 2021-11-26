@@ -159,7 +159,8 @@
     "pattern": "1m2m3m4m5m6m7m8m9m 1p1p1p 1z1z",
     "hanValue": "二番",
     "openReduceHan": true,
-    "isSequence": true
+    "isSequence": true,
+    "isSuit": true
   },
   {
     "name": "三色同顺",
@@ -190,14 +191,16 @@
     "description": "只包含1种数牌，并且含有字牌的刻子或者雀头",
     "pattern": "1m1m1m2m3m4m5m6m7m2z2z2z 5z5z",
     "hanValue": "三番",
-    "openReduceHan": true
+    "openReduceHan": true,
+    "isSuit": true
   },
   {
     "name": "清一色",
     "description": "只包含1种数牌，不能含有字牌",
     "pattern": "1m2m3m 2m3m4m 3m4m5m 6m6m6m 9m9m",
     "hanValue": "六番",
-    "openReduceHan": true
+    "openReduceHan": true,
+    "isSuit": true
   },
   {
     "name": "流局满贯",
@@ -244,7 +247,8 @@
     "name": "绿一色",
     "description": "只包含索子的23468以及发",
     "pattern": "2s2s2s 3s3s3s 4s4s4s 6s6s6s 6z6z",
-    "hanValue": "役满"
+    "hanValue": "役满",
+    "isSuit": true
   },
 
   {
@@ -281,7 +285,8 @@
     "description": "同种数牌1112345678999+其中任意一种再有1张",
     "pattern": "1m1m1m2m3m4m5m6m7m8m9m9m9m 1m",
     "hanValue": "役满",
-    "closedOnly": true
+    "closedOnly": true,
+    "isSuit": true
   },
   {
     "name": "四暗刻单骑",
@@ -304,7 +309,8 @@
     "description": "九连宝灯最后9面听牌和牌",
     "pattern": "1m1m1m2m3m4m5m6m7m8m9m9m9m 5m",
     "hanValue": "双倍役满",
-    "closedOnly": true
+    "closedOnly": true,
+    "isSuit": true
   },
   {
     "name": "大四喜",
