@@ -23,19 +23,19 @@
     "name": "役牌：自风牌",
     "description": "包含自风刻子（三个一样的）",
     "pattern": "3m3m3m4p5p6p7s8s9s 3z3z3z 1s 1s",
-    "handValue": "一番"
+    "hanValue": "一番"
   },
   {
     "name": "役牌：场风牌",
     "description": "包含场风刻子（三个一样的）",
     "pattern": "3m3m3m4p5p6p7s8s9s 1z1z1z 1s 1s",
-    "handValue": "一番"
+    "hanValue": "一番"
   },
   {
     "name": "役牌： 三元牌",
     "description": "包含白，发，中的刻子（三个一样的）",
     "pattern": "3m3m3m4p5p6p7s8s9s 5z5z5z 1s 1s",
-    "handValue": "一番"
+    "hanValue": "一番"
   },
   {
     "name": "平和",
