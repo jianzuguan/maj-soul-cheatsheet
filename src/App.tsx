@@ -249,7 +249,20 @@ function App() {
         if (yaku.closedOnly && !showClosedOnly) {
           return null;
         }
-        return <Yaku yaku={yaku} key={index} />;
+        if (
+          (yaku.isSpecial && showBasedOnSpecial) ||
+          (yaku.isSequence && showBasedOnSequence) ||
+          (yaku.isTriplet && showBasedOnTriplet) ||
+          (yaku.isQuad && showBasedOnQuad) ||
+          (yaku.is19 && showBasedOn19) ||
+          (yaku.isSuit && showBasedOnSuit) ||
+          (yaku.isHonor && showBasedOnHonor) ||
+          (yaku.isLuck && showBasedOnLuck) ||
+          (yaku.isDraw && showBasedOnDraw)
+        )
+          return <Yaku yaku={yaku} key={index} />;
+
+        return null;
       })}
     </div>
   );
