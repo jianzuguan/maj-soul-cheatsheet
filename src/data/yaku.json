@@ -45,14 +45,16 @@
     "description": "4组顺子+非役牌的雀头+最后是顺子的两面听",
     "pattern": "1m2m3m5m6m7m2p3p4p6s7s9s9s 5s",
     "hanValue": "一番",
-    "closedOnly": true
+    "closedOnly": true,
+    "isSequence": true
   },
   {
     "name": "一杯口",
     "description": "2组完全相同的顺子",
     "pattern": "1m2m3m1m2m3m4p4p4p7p8p9p3s 3s",
     "hanValue": "一番",
-    "closedOnly": true
+    "closedOnly": true,
+    "isSequence": true
   },
   {
     "name": "枪杠",
@@ -153,21 +155,24 @@
     "description": "同种数牌组成123，456，789的顺子",
     "pattern": "1m2m3m4m5m6m7m8m9m 1p1p1p 1z1z",
     "hanValue": "二番",
-    "openReduceHan": true
+    "openReduceHan": true,
+    "isSequence": true
   },
   {
     "name": "三色同顺",
     "description": "万，筒，索都有相同的数字的顺子",
     "pattern": "1m2m3m 1p2p3p 1s2s3s 6s6s6s 3z3z",
     "hanValue": "二番",
-    "openReduceHan": true
+    "openReduceHan": true,
+    "isSequence": true
   },
   {
     "name": "二杯口",
     "description": "包含2组一杯口（一杯口：2组完全相同的顺子）",
     "pattern": "1s2s3s1s2s3s 2p3p4p2p3p4p 1z1z",
     "hanValue": "三番",
-    "closedOnly": true
+    "closedOnly": true,
+    "isSequence": true
   },
   {
     "name": "纯全带幺九",
