@@ -1,0 +1,2 @@
+(this["webpackJsonpmaj-soul-cheatsheet"]=this["webpackJsonpmaj-soul-cheatsheet"]||[]).push([[32],{47:function(s,t,e){"use strict";e.r(t),t.default=e.p+"static/media/7p.127f2912.png"}}]);
+//# sourceMappingURL=32.01e5110a.chunk.js.map
