@@ -7,6 +7,15 @@ import { Switch } from "@headlessui/react";
 
 function App() {
   const [showClosedOnly, setShowClosedOnly] = React.useState(true);
+  const [showBasedOnSequence, setShowBasedOnSequence] = React.useState(true);
+  const [showBasedOnTriplet, setShowBasedOnTriplet] = React.useState(true);
+  const [showBasedOnQuad, setShowBasedOnQuad] = React.useState(true);
+  // Terminal == 老头牌 == 1，9
+  // Honor == 字牌 == 东南西北白发中
+  // 19 == 幺九 == 老头牌+字牌
+  const [showBasedOn19, setShowBasedOn19] = React.useState(true);
+  const [showBasedOnHonor, setShowBasedOnHonor] = React.useState(true);
+  const [showBasedOnSuit, setShowBasedOnSuit] = React.useState(true);
 
   return (
     <div className="container flex flex-col justify-center items-center">
@@ -14,6 +23,120 @@ function App() {
 
       <div>
         {" "}
+        <Switch.Group>
+          <div className="flex items-center">
+            <Switch.Label className="mr-4 text-gray-400">顺子</Switch.Label>
+            <Switch
+              checked={showBasedOnSequence}
+              onChange={setShowBasedOnSequence}
+              className={`${
+                showBasedOnSequence ? "bg-blue-600" : "bg-gray-200"
+              } relative inline-flex items-center h-6 rounded-full w-11`}
+            >
+              <span className="sr-only">顺子</span>
+              <span
+                className={`${
+                  showBasedOnSequence ? "translate-x-6" : "translate-x-1"
+                } inline-block w-4 h-4 transform bg-white rounded-full`}
+              />
+            </Switch>
+          </div>
+        </Switch.Group>
+        <Switch.Group>
+          <div className="flex items-center">
+            <Switch.Label className="mr-4 text-gray-400">刻子</Switch.Label>
+            <Switch
+              checked={showBasedOnTriplet}
+              onChange={setShowBasedOnTriplet}
+              className={`${
+                showBasedOnTriplet ? "bg-blue-600" : "bg-gray-200"
+              } relative inline-flex items-center h-6 rounded-full w-11`}
+            >
+              <span className="sr-only">刻子</span>
+              <span
+                className={`${
+                  showBasedOnTriplet ? "translate-x-6" : "translate-x-1"
+                } inline-block w-4 h-4 transform bg-white rounded-full`}
+              />
+            </Switch>
+          </div>
+        </Switch.Group>
+        <Switch.Group>
+          <div className="flex items-center">
+            <Switch.Label className="mr-4 text-gray-400">杠</Switch.Label>
+            <Switch
+              checked={showBasedOnQuad}
+              onChange={setShowBasedOnQuad}
+              className={`${
+                showBasedOnQuad ? "bg-blue-600" : "bg-gray-200"
+              } relative inline-flex items-center h-6 rounded-full w-11`}
+            >
+              <span className="sr-only">杠</span>
+              <span
+                className={`${
+                  showBasedOnQuad ? "translate-x-6" : "translate-x-1"
+                } inline-block w-4 h-4 transform bg-white rounded-full`}
+              />
+            </Switch>
+          </div>
+        </Switch.Group>
+        <Switch.Group>
+          <div className="flex items-center">
+            <Switch.Label className="mr-4 text-gray-400">幺九</Switch.Label>
+            <Switch
+              checked={showBasedOn19}
+              onChange={setShowBasedOn19}
+              className={`${
+                showBasedOn19 ? "bg-blue-600" : "bg-gray-200"
+              } relative inline-flex items-center h-6 rounded-full w-11`}
+            >
+              <span className="sr-only">幺九</span>
+              <span
+                className={`${
+                  showBasedOn19 ? "translate-x-6" : "translate-x-1"
+                } inline-block w-4 h-4 transform bg-white rounded-full`}
+              />
+            </Switch>
+          </div>
+        </Switch.Group>
+        <Switch.Group>
+          <div className="flex items-center">
+            <Switch.Label className="mr-4 text-gray-400">字牌</Switch.Label>
+            <Switch
+              checked={showBasedOnHonor}
+              onChange={setShowBasedOnHonor}
+              className={`${
+                showBasedOnHonor ? "bg-blue-600" : "bg-gray-200"
+              } relative inline-flex items-center h-6 rounded-full w-11`}
+            >
+              <span className="sr-only">字牌</span>
+              <span
+                className={`${
+                  showBasedOnHonor ? "translate-x-6" : "translate-x-1"
+                } inline-block w-4 h-4 transform bg-white rounded-full`}
+              />
+            </Switch>
+          </div>
+        </Switch.Group>
+        <Switch.Group>
+          <div className="flex items-center">
+            <Switch.Label className="mr-4 text-gray-400">同种类</Switch.Label>
+            <Switch
+              checked={showBasedOnSuit}
+              onChange={setShowBasedOnSuit}
+              className={`${
+                showBasedOnSuit ? "bg-blue-600" : "bg-gray-200"
+              } relative inline-flex items-center h-6 rounded-full w-11`}
+            >
+              <span className="sr-only">同种类</span>
+              <span
+                className={`${
+                  showBasedOnSuit ? "translate-x-6" : "translate-x-1"
+                } inline-block w-4 h-4 transform bg-white rounded-full`}
+              />
+            </Switch>
+          </div>
+        </Switch.Group>
         <Switch.Group>
           <div className="flex items-center">
             <Switch.Label className="mr-4 text-gray-400">门前清</Switch.Label>
