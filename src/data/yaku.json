@@ -10,7 +10,8 @@
     "name": "断幺九",
     "description": "手牌中不包含幺九牌（19万，19筒，19条，字牌）",
     "pattern": "2m3m4m 5m6m7m 3p3p3p 4s5s6s 8s 8s",
-    "hanValue": "一番"
+    "hanValue": "一番",
+    "is19": true
   },
   {
     "name": "门前清自摸和",
@@ -134,7 +135,8 @@
     "name": "混老头",
     "description": "胡牌时只包含老头牌（19万，19筒，19索）和字牌",
     "pattern": "1m1m1m 9m9m9m 1p1p1p 1s1s1s 1z 1z",
-    "hanValue": "二番"
+    "hanValue": "二番",
+    "is19": true
   },
   {
     "name": "七对子",
@@ -148,7 +150,8 @@
     "description": "包含老头牌加上字牌的4组顺子和刻子+幺九牌的雀头",
     "pattern": "1m2m3m 7m8m9m 1p2p3p 1z1z1z 6z6z",
     "hanValue": "二番",
-    "openReduceHan": true
+    "openReduceHan": true,
+    "is19": true
   },
   {
     "name": "一气通贯",
@@ -179,7 +182,8 @@
     "description": "只包含老头牌的4组顺子和刻子+老头牌的雀头",
     "pattern": "1m2m3m 7m8m9m 1p2p3p 9s9s9s 1s1s",
     "hanValue": "三番",
-    "openReduceHan": true
+    "openReduceHan": true,
+    "is19": true
   },
   {
     "name": "混一色",
@@ -247,14 +251,16 @@
     "name": "清老头",
     "description": "手牌中只有老头牌（19万，19筒，19索）",
     "pattern": "1m1m1m 9m9m9m 1p1p1p 9p9p9p 1s1s",
-    "hanValue": "役满"
+    "hanValue": "役满",
+    "is19": true
   },
   {
     "name": "国士无双",
     "description": "全部十三种幺九牌各一张外加其中一种再有1张",
     "pattern": "1m9m1p9p9p1s9s1z2z3z4z5z6z 7z",
     "hanValue": "役满",
-    "closedOnly": true
+    "closedOnly": true,
+    "is19": true
   },
   {
     "name": "小四喜",
@@ -290,7 +296,8 @@
     "description": "国士无双最后13面听牌和牌",
     "pattern": "1m9m1p9p1s9s1z2z3z4z5z6z7z 1m",
     "hanValue": "双倍役满",
-    "closedOnly": true
+    "closedOnly": true,
+    "is19": true
   },
   {
     "name": "纯正九莲宝灯",
