@@ -65,11 +65,11 @@ function App() {
             清空
           </button>
         </div>
-        <div className="w-full my-1 flex flex-row justify-between">
+        <div className="w-full my-1 flex flex-row flex-wrap">
           {" "}
           <Switch.Group>
             <div className="flex items-center">
-              <Switch.Label className="mr-4 text-gray-400">特殊</Switch.Label>
+              <Switch.Label className="ml-4 mr-1 text-gray-400">特殊</Switch.Label>
               <Switch
                 checked={showBasedOnSpecial}
                 onChange={setShowBasedOnSpecial}
@@ -88,7 +88,7 @@ function App() {
           </Switch.Group>
           <Switch.Group>
             <div className="flex items-center">
-              <Switch.Label className="mr-4 text-gray-400">顺子</Switch.Label>
+              <Switch.Label className="ml-4 mr-1 text-gray-400">顺子</Switch.Label>
               <Switch
                 checked={showBasedOnSequence}
                 onChange={setShowBasedOnSequence}
@@ -107,7 +107,7 @@ function App() {
           </Switch.Group>
           <Switch.Group>
             <div className="flex items-center">
-              <Switch.Label className="mr-4 text-gray-400">刻子</Switch.Label>
+              <Switch.Label className="ml-4 mr-1 text-gray-400">刻子</Switch.Label>
               <Switch
                 checked={showBasedOnTriplet}
                 onChange={setShowBasedOnTriplet}
@@ -126,7 +126,7 @@ function App() {
           </Switch.Group>
           <Switch.Group>
             <div className="flex items-center">
-              <Switch.Label className="mr-4 text-gray-400">杠</Switch.Label>
+              <Switch.Label className="ml-4 mr-1 text-gray-400">杠</Switch.Label>
               <Switch
                 checked={showBasedOnQuad}
                 onChange={setShowBasedOnQuad}
@@ -145,7 +145,7 @@ function App() {
           </Switch.Group>
           <Switch.Group>
             <div className="flex items-center">
-              <Switch.Label className="mr-4 text-gray-400">幺九</Switch.Label>
+              <Switch.Label className="ml-4 mr-1 text-gray-400">幺九</Switch.Label>
               <Switch
                 checked={showBasedOn19}
                 onChange={setShowBasedOn19}
@@ -164,7 +164,7 @@ function App() {
           </Switch.Group>
           <Switch.Group>
             <div className="flex items-center">
-              <Switch.Label className="mr-4 text-gray-400">字牌</Switch.Label>
+              <Switch.Label className="ml-4 mr-1 text-gray-400">字牌</Switch.Label>
               <Switch
                 checked={showBasedOnHonor}
                 onChange={setShowBasedOnHonor}
@@ -183,7 +183,7 @@ function App() {
           </Switch.Group>
           <Switch.Group>
             <div className="flex items-center">
-              <Switch.Label className="mr-4 text-gray-400">同种类</Switch.Label>
+              <Switch.Label className="ml-4 mr-1 text-gray-400">同种类</Switch.Label>
               <Switch
                 checked={showBasedOnSuit}
                 onChange={setShowBasedOnSuit}
@@ -202,7 +202,7 @@ function App() {
           </Switch.Group>
           <Switch.Group>
             <div className="flex items-center">
-              <Switch.Label className="mr-4 text-gray-400">运气</Switch.Label>
+              <Switch.Label className="ml-4 mr-1 text-gray-400">运气</Switch.Label>
               <Switch
                 checked={showBasedOnLuck}
                 onChange={setShowBasedOnLuck}
@@ -221,7 +221,7 @@ function App() {
           </Switch.Group>
           <Switch.Group>
             <div className="flex items-center">
-              <Switch.Label className="mr-4 text-gray-400">流局</Switch.Label>
+              <Switch.Label className="ml-4 mr-1 text-gray-400">流局</Switch.Label>
               <Switch
                 checked={showBasedOnDraw}
                 onChange={setShowBasedOnDraw}
@@ -242,7 +242,7 @@ function App() {
         <div className="my-1">
           <Switch.Group>
             <div className="flex items-center">
-              <Switch.Label className="mr-4 text-gray-400">门前清</Switch.Label>
+              <Switch.Label className="ml-4 mr-1 text-gray-400">门前清</Switch.Label>
               <Switch
                 checked={showClosedOnly}
                 onChange={setShowClosedOnly}
