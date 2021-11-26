@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "役种一览",
+  "name": "役种一览与查询",
   "icons": [
     {
       "src": "favicon.ico",
