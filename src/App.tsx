@@ -16,13 +16,21 @@ function App() {
         return (
           <div
             key={`${yaku.name}`}
-            className={["w-full flex flex-col", "mb-1", "border-2"].join(" ")}
+            className={[
+              "w-full flex flex-col",
+              "mb-1",
+              "p-4",
+              "border-2 border-indigo-900",
+            ].join(" ")}
           >
             <div className="flex flex-row justify-between">
-              <h2>{yaku.name}</h2>
-              {yaku.closedHandOnly && <p>门前清限定</p>}
+              <h2 className="text-yellow-300">{yaku.name}</h2>
+              {yaku.closedOnly && <p className="text-green-500">门前清限定</p>}
+              {yaku.openReduceHan && (
+                <p className="text-green-500">副露减1番</p>
+              )}
             </div>
-            <p>{yaku.description}</p>
+            <p className="text-gray-400">{yaku.description}</p>
             <div className="w-full flex flex-row">
               {patternCodes.map((patternCode, patternCodeIndex: number) =>
                 patternCode ? (
