@@ -17,12 +17,41 @@ function App() {
   const [showBasedOn19, setShowBasedOn19] = React.useState(true);
   const [showBasedOnHonor, setShowBasedOnHonor] = React.useState(true);
   const [showBasedOnSuit, setShowBasedOnSuit] = React.useState(true);
+  const [showBasedOnLuck, setShowBasedOnLuck] = React.useState(true);
+  const [showBasedOnDraw, setShowBasedOnDraw] = React.useState(true);
+
+  const selectAll = () => {
+    setShowBasedOnSpecial(true);
+    setShowBasedOnSequence(true);
+    setShowBasedOnTriplet(true);
+    setShowBasedOnQuad(true);
+    setShowBasedOn19(true);
+    setShowBasedOnHonor(true);
+    setShowBasedOnSuit(true);
+    setShowBasedOnLuck(true);
+    setShowBasedOnDraw(true);
+  };
+
+  const diselectAll = () => {
+    setShowBasedOnSpecial(false);
+    setShowBasedOnSequence(false);
+    setShowBasedOnTriplet(false);
+    setShowBasedOnQuad(false);
+    setShowBasedOn19(false);
+    setShowBasedOnHonor(false);
+    setShowBasedOnSuit(false);
+    setShowBasedOnLuck(false);
+    setShowBasedOnDraw(false);
+  };
 
   return (
     <div className="container flex flex-col justify-center items-center">
       <img src={logo} className="App-logo" alt="logo" />
-
-      <div className='w-full flex flex-row justify-between'>
+      <div>
+        <button onClick={selectAll}>全选</button>
+        <button onClick={diselectAll}>清空</button>
+      </div>
+      <div className="w-full flex flex-row justify-between">
         {" "}
         <Switch.Group>
           <div className="flex items-center">
@@ -159,24 +188,62 @@ function App() {
         </Switch.Group>
         <Switch.Group>
           <div className="flex items-center">
-            <Switch.Label className="mr-4 text-gray-400">门前清</Switch.Label>
+            <Switch.Label className="mr-4 text-gray-400">运气</Switch.Label>
             <Switch
-              checked={showClosedOnly}
-              onChange={setShowClosedOnly}
+              checked={showBasedOnLuck}
+              onChange={setShowBasedOnLuck}
               className={`${
-                showClosedOnly ? "bg-blue-600" : "bg-gray-200"
+                showBasedOnLuck ? "bg-blue-600" : "bg-gray-200"
               } relative inline-flex items-center h-6 rounded-full w-11`}
             >
-              <span className="sr-only">门前清</span>
+              <span className="sr-only">运气</span>
               <span
                 className={`${
-                  showClosedOnly ? "translate-x-6" : "translate-x-1"
+                  showBasedOnLuck ? "translate-x-6" : "translate-x-1"
+                } inline-block w-4 h-4 transform bg-white rounded-full`}
+              />
+            </Switch>
+          </div>
+        </Switch.Group>
+        <Switch.Group>
+          <div className="flex items-center">
+            <Switch.Label className="mr-4 text-gray-400">流局</Switch.Label>
+            <Switch
+              checked={showBasedOnDraw}
+              onChange={setShowBasedOnDraw}
+              className={`${
+                showBasedOnDraw ? "bg-blue-600" : "bg-gray-200"
+              } relative inline-flex items-center h-6 rounded-full w-11`}
+            >
+              <span className="sr-only">流局</span>
+              <span
+                className={`${
+                  showBasedOnDraw ? "translate-x-6" : "translate-x-1"
                 } inline-block w-4 h-4 transform bg-white rounded-full`}
               />
             </Switch>
           </div>
         </Switch.Group>
       </div>
+      <Switch.Group>
+        <div className="flex items-center">
+          <Switch.Label className="mr-4 text-gray-400">门前清</Switch.Label>
+          <Switch
+            checked={showClosedOnly}
+            onChange={setShowClosedOnly}
+            className={`${
+              showClosedOnly ? "bg-blue-600" : "bg-gray-200"
+            } relative inline-flex items-center h-6 rounded-full w-11`}
+          >
+            <span className="sr-only">门前清</span>
+            <span
+              className={`${
+                showClosedOnly ? "translate-x-6" : "translate-x-1"
+              } inline-block w-4 h-4 transform bg-white rounded-full`}
+            />
+          </Switch>
+        </div>
+      </Switch.Group>
 
       {yakuList.map((yaku, index) => {
         if (yaku.closedOnly && !showClosedOnly) {
