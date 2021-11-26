@@ -29,6 +29,8 @@ function App() {
               {yaku.openReduceHan && (
                 <p className="text-green-500">副露减1番</p>
               )}
+              {yaku.dealerOnly && <p className="text-green-500">庄家限定</p>}
+              {yaku.nonDealerOnly && <p className="text-green-500">子家限定</p>}
             </div>
             <p className="text-gray-400">{yaku.description}</p>
             <div className="w-full flex flex-row">
