@@ -25,21 +25,24 @@
     "description": "包含自风刻子（三个一样的）",
     "pattern": "3m3m3m4p5p6p7s8s9s 3z3z3z 1s 1s",
     "hanValue": "一番",
-    "isTriplet": true
+    "isTriplet": true,
+    "isHonor": true
   },
   {
     "name": "役牌：场风牌",
     "description": "包含场风刻子（三个一样的）",
     "pattern": "3m3m3m4p5p6p7s8s9s 1z1z1z 1s 1s",
     "hanValue": "一番",
-    "isTriplet": true
+    "isTriplet": true,
+    "isHonor": true
   },
   {
     "name": "役牌： 三元牌",
     "description": "包含白，发，中的刻子（三个一样的）",
     "pattern": "3m3m3m4p5p6p7s8s9s 5z5z5z 1s 1s",
     "hanValue": "一番",
-    "isTriplet": true
+    "isTriplet": true,
+    "isHonor": true
   },
   {
     "name": "平和",
@@ -129,7 +132,8 @@
     "description": "包含白、发、中其中2种的刻子+剩下1种的雀头",
     "pattern": "2m3m4m5p6p7p 5z5z5z 6z6z6z 7z 7z",
     "hanValue": "二番",
-    "isTriplet": true
+    "isTriplet": true,
+    "isHonor": true
   },
   {
     "name": "混老头",
@@ -227,7 +231,8 @@
     "description": "包含白、发、中的三组刻子",
     "pattern": "1s2s3s 5z5z5z 6z6z6z 7z7z7z 9s9s",
     "hanValue": "役满",
-    "isTriplet": true
+    "isTriplet": true,
+    "isHonor": true
   },
   {
     "name": "四暗刻",
@@ -241,7 +246,8 @@
     "name": "字一色",
     "description": "只包含字牌",
     "pattern": "1z1z1z 2z2z2z 3z3z3z 5z5z5z 6z6z",
-    "hanValue": "役满"
+    "hanValue": "役满",
+    "isHonor": true
   },
   {
     "name": "绿一色",
@@ -271,7 +277,8 @@
     "description": "包含三种风牌的刻子+剩下一种风牌的雀头",
     "pattern": "1p2p3p 1z1z1z 2z2z2z 3z3z3z 4z4z",
     "hanValue": "役满",
-    "isTriplet": true
+    "isTriplet": true,
+    "isHonor": true
   },
   {
     "name": "四杆子",
@@ -317,7 +324,8 @@
     "description": "包含4种风牌的刻子",
     "pattern": "1z1z1z 2z2z2z 3z3z3z 4z4z4z 5p5p",
     "hanValue": "双倍役满",
-    "isTriplet": true
+    "isTriplet": true,
+    "isHonor": true
   },
   {
     "name": "四风连打",
