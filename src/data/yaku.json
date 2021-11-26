@@ -23,19 +23,22 @@
     "name": "役牌：自风牌",
     "description": "包含自风刻子（三个一样的）",
     "pattern": "3m3m3m4p5p6p7s8s9s 3z3z3z 1s 1s",
-    "hanValue": "一番"
+    "hanValue": "一番",
+    "isTriplet": true
   },
   {
     "name": "役牌：场风牌",
     "description": "包含场风刻子（三个一样的）",
     "pattern": "3m3m3m4p5p6p7s8s9s 1z1z1z 1s 1s",
-    "hanValue": "一番"
+    "hanValue": "一番",
+    "isTriplet": true
   },
   {
     "name": "役牌： 三元牌",
     "description": "包含白，发，中的刻子（三个一样的）",
     "pattern": "3m3m3m4p5p6p7s8s9s 5z5z5z 1s 1s",
-    "hanValue": "一番"
+    "hanValue": "一番",
+    "isTriplet": true
   },
   {
     "name": "平和",
@@ -92,7 +95,8 @@
     "name": "三色同刻",
     "description": "万，筒，索都有相同数字的刻子",
     "pattern": "3m3m3m 3p3p3p 3s3s3s 5s6s7s 7z7z",
-    "hanValue": "二番"
+    "hanValue": "二番",
+    "isTriplet": true
   },
   {
     "name": "三杠子",
@@ -104,19 +108,22 @@
     "name": "对对和",
     "description": "拥有4组刻子或杠",
     "pattern": "3m3m3m 4p4p4p 3s3s3s 1z1z1z 2z2z",
-    "hanValue": "二番"
+    "hanValue": "二番",
+    "isTriplet": true
   },
   {
     "name": "三暗刻",
     "description": "拥有3组没有碰的刻子。自己摸到2组刻子",
     "pattern": "1m1m1m1p1p1p1s1s1s 3s4s5s 1z 1z",
-    "hanValue": "二番"
+    "hanValue": "二番",
+    "isTriplet": true
   },
   {
     "name": "小三元",
     "description": "包含白、发、中其中2种的刻子+剩下1种的雀头",
     "pattern": "2m3m4m5p6p7p 5z5z5z 6z6z6z 7z 7z",
-    "hanValue": "二番"
+    "hanValue": "二番",
+    "isTriplet": true
   },
   {
     "name": "混老头",
@@ -204,14 +211,16 @@
     "name": "大三元",
     "description": "包含白、发、中的三组刻子",
     "pattern": "1s2s3s 5z5z5z 6z6z6z 7z7z7z 9s9s",
-    "hanValue": "役满"
+    "hanValue": "役满",
+    "isTriplet": true
   },
   {
     "name": "四暗刻",
     "description": "包含没有碰的4组刻子",
     "pattern": "1m1m1m2m2m2m3p3p3p4p4p4p 5s5s",
     "hanValue": "役满",
-    "closedOnly": true
+    "closedOnly": true,
+    "isTriplet": true
   },
   {
     "name": "字一色",
@@ -243,7 +252,8 @@
     "name": "小四喜",
     "description": "包含三种风牌的刻子+剩下一种风牌的雀头",
     "pattern": "1p2p3p 1z1z1z 2z2z2z 3z3z3z 4z4z",
-    "hanValue": "役满"
+    "hanValue": "役满",
+    "isTriplet": true
   },
   {
     "name": "四杆子",
@@ -263,7 +273,8 @@
     "description": "四暗刻最后单骑听牌和牌（包含没有碰的4组刻子，和牌只听一张）",
     "pattern": "1m1m1m2p2p2p5p5p5p7s7s7s4z 4z",
     "hanValue": "双倍役满",
-    "closedOnly": true
+    "closedOnly": true,
+    "isTriplet": true
   },
   {
     "name": "国士无双十三面",
@@ -283,7 +294,8 @@
     "name": "大四喜",
     "description": "包含4种风牌的刻子",
     "pattern": "1z1z1z 2z2z2z 3z3z3z 4z4z4z 5p5p",
-    "hanValue": "双倍役满"
+    "hanValue": "双倍役满",
+    "isTriplet": true
   },
   {
     "name": "四风连打",
