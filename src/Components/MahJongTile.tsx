@@ -1,5 +1,5 @@
-import React from "react";
-import { getMahJongTileImage } from "../utils/getMahJongTileImage";
+import React from 'react';
+import { getMahJongTileImage } from '../utils/getMahJongTileImage';
 
 interface Props {
   code: string;

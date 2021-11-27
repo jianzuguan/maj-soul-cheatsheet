@@ -1,4 +1,4 @@
-import { Switch } from "@headlessui/react";
+import { Switch } from '@headlessui/react';
 
 interface Props {
   state: boolean;
@@ -19,13 +19,13 @@ export default function Toggle(props: Props) {
           checked={state}
           onChange={setState}
           className={`${
-            state ? "bg-blue-600" : "bg-gray-200"
+            state ? 'bg-blue-600' : 'bg-gray-200'
           } relative inline-flex items-center h-6 rounded-full w-11`}
         >
           <span className="sr-only">{children}</span>
           <span
             className={`${
-              state ? "translate-x-6" : "translate-x-1"
+              state ? 'translate-x-6' : 'translate-x-1'
             } inline-block w-4 h-4 transform bg-white rounded-full`}
           />
         </Switch>
