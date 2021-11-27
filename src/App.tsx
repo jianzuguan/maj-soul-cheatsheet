@@ -64,7 +64,7 @@ function App() {
             清空
           </button>
         </div>
-        <div className="w-full my-1 flex flex-row flex-wrap">
+        <div className="w-full my-1 flex flex-row flex-wrap border-2 p-1">
           <Toggle state={showBasedOnSpecial} setState={setShowBasedOnSpecial}>
             特殊
           </Toggle>
