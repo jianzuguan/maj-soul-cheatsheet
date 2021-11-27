@@ -90,7 +90,7 @@ function App() {
             幸运
           </Toggle>
           <Toggle state={showBasedOnDraw} setState={setShowBasedOnDraw}>
-            抽牌
+            流局
           </Toggle>
         </div>
         <div className="my-1">
