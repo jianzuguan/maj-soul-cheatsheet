@@ -1,7 +1,7 @@
-import React from "react";
-import yakuList from "./data/yaku.json";
-import Yaku from "./Components/Yaku";
-import Toggle from "./Components/Toggle";
+import React from 'react';
+import yakuList from './data/yaku.json';
+import Yaku from './Components/Yaku';
+import Toggle from './Components/Toggle';
 
 function App() {
   const [showClosedOnly, setShowClosedOnly] = React.useState(true);
@@ -46,9 +46,9 @@ function App() {
     <div className="h-screen flex flex-col">
       <div
         className={[
-          "container my-2",
-          "flex flex-col justify-center items-start",
-        ].join(" ")}
+          'container my-2',
+          'flex flex-col justify-center items-start',
+        ].join(' ')}
       >
         <div className="my-1">
           <button
