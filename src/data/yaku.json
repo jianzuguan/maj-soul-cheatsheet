@@ -94,8 +94,8 @@
   },
   {
     "name": "一发",
-    "description": "最后一张牌荣和",
-    "pattern": "2m2m2m 4p5p6p 3s3s3s 9s9s9s 1z 1z",
+    "description": "立直后，无人鸣牌的状态下一巡内和牌",
+    "pattern": "1m2m3m4p4p4p5s6s7s1z1z1z2z 2z",
     "hanValue": "一番",
     "isLuck": true
   },
