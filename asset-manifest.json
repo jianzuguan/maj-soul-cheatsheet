@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/maj-soul-cheatsheet/static/css/main.bb906be8.chunk.css",
-    "main.js": "/maj-soul-cheatsheet/static/js/main.a7b2f505.chunk.js",
-    "main.js.map": "/maj-soul-cheatsheet/static/js/main.a7b2f505.chunk.js.map",
+    "main.js": "/maj-soul-cheatsheet/static/js/main.4cebbf53.chunk.js",
+    "main.js.map": "/maj-soul-cheatsheet/static/js/main.4cebbf53.chunk.js.map",
     "runtime-main.js": "/maj-soul-cheatsheet/static/js/runtime-main.ca127340.js",
     "runtime-main.js.map": "/maj-soul-cheatsheet/static/js/runtime-main.ca127340.js.map",
     "static/js/2.47684e47.chunk.js": "/maj-soul-cheatsheet/static/js/2.47684e47.chunk.js",
@@ -102,6 +102,6 @@
     "static/js/runtime-main.ca127340.js",
     "static/js/2.47684e47.chunk.js",
     "static/css/main.bb906be8.chunk.css",
-    "static/js/main.a7b2f505.chunk.js"
+    "static/js/main.4cebbf53.chunk.js"
   ]
 }
